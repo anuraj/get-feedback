@@ -150,7 +150,7 @@
                 </div>
             `;
             // Send token to Azure Function for verification and redirect
-            fetch('/api/GoogleAuthRedirect', {
+            fetch('/api/GoogleAuth', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ token: response.credential })
